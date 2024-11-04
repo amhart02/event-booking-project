@@ -37,7 +37,8 @@ The expected minimum amount of time each Sprint for each category is as follows:
 |   11/2   |    IM    | 5:20pm | Watched brother MacBeths tutorial on django web app|     60      |
 |   11/2   |    IM    |10:15pm | Made general set up and idea of the web app        |     60      |
 |   11/3   |    IM    | 3:15pm | Continued working on function of the app           |     135     |
-|   11/4   |    IM    |11:45pm | Working more on the overall app function           |          |
+|   11/4   |    IM    |11:45pm | Working more on the overall app function           |     75      |
+|   11/4   |    IM    |  3pm   | Finishing up the read me and the assignment        |    45       |
 
 
 
@@ -47,7 +48,7 @@ _Note: Add more rows as needed._
 
 |Category                       |Total Time (Hours:Minutes)|
 |-------------------------------|:------------------------:|
-|IM - Individual Module         |                          |  5:00
+|IM - Individual Module         |          7:00            |  
 |TP - Team Project              |          5:00            |
 |MTG - Class Meetings           |          2:00            |
 |**TOTAL**                      |                          |

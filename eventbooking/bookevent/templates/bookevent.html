@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+        }
+        header {
+            background-color: lightgray;
+            margin: 0;
+            padding: 5%;
+        }
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        form, p {
+            margin-left: 5%;
+        }
+        #submit {
+            background-color: darkblue;
+            color: white;
+        }
+    </style>
+</head>
+<br>
+    <header>
+        <h1>Welcome to the event booking program!</h1>
+        <h2>Please enter your name, email, and which events you would like to participate in. </h2>
+    </header>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+    <form action="{% url 'book' %}" method="POST">
+        {% csrf_token %}
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <br></br>
+
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+        <br></br>
+
+        <label for="event_bouncy">Bouncy House:</label>
+        <label>
+            <input type="radio" name="event_bouncy" value="yes" required> Yes
+        </label>
+        <label>
+            <input type="radio" name="event_bouncy" value="no"> No
+        </label>
+        <br></br>
+
+        <label for="event_willy">Willy Wonka's "Fantastic" Experience:</label>
+        <label>
+            <input type="radio" name="event_willy" value="yes" required> Yes
+        </label>
+        <label>
+            <input type="radio" name="event_willy" value="no"> No
+        </label>
+        <br></br>
+
+        <label for="event_spooky">Spooky Movie Night:</label>
+        <label>
+            <input type="radio" name="event_spooky" value="yes" required> Yes
+        </label>
+        <label>
+            <input type="radio" name="event_spooky" value="no"> No
+        </label>
+        <br></br>
+
+        <label for="event_robert">Robert Louis Stevenson Book Reading:</label>
+        <label>
+            <input type="radio" name="event_robert" value="yes" required> Yes
+        </label>
+        <label>
+            <input type="radio" name="event_robert" value="no"> No
+        </label>
+        <br></br>
+
+        <label for="event_blood">Blood Drive:</label>
+        <label>
+            <input type="radio" name="event_blood" value="yes" required> Yes
+        </label>
+        <label>
+            <input type="radio" name="event_blood" value="no"> No
+        </label>
+        <br></br>
+
+        <input type="submit" value="Submit" id="submit">
+
+    </form>
+</body>
+</html>
